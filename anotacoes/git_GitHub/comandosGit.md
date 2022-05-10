@@ -33,3 +33,20 @@
   mv arquivo1.txt ./c/workspace/arquivos/
 * **echo:** exibe no terminal a mensagem digitada a seguir, pode ser utilizado em conjunto com ">" para salvar essa mensagem em um arquivo.txt.
   echo hello world > hello.txt
+
+### Manipulação de repositórios
+
+* **git init:** inicia um repositório do git na localização atual" e cria os arquivos necessários.
+* **git clone:** clona um repositório e trás os arquivos para o repositório local atual do usuário.
+  git clone endereço
+* **git status:** exibe a situação da branch atual, listando os arquivos modificados, deletados e não rastreados (untracked).
+* **git log:** exibe o histórico de commits do repositório atual.
+* **git add:** autentica o arquivo, deixa ele como "staged" e pronto para ser "commitado"
+  git add *
+* **git commit:** commita as mudanças, registrando-as e deixando prontas para serem enviadas ao repositório em nuvem.
+  git commit -m "mensagem commit"
+* **git push:** envia os commits realizados para o repositório em nuvem.
+  git push origin main
+  (alguns repositórios podem ter sua branch principal nomeada como master)
+* **git pull:** usado para corrigir erros de merge, onde o arquivo em nuvem está dessincronizado com o do seu repositório local, isto é: ele é considerado mais atual que o que você deseja realizar o pull. O comando em si "puxa" o ultimo commit da nuvem e compara com o seu último commit local, deixando ao seu cargo corrigir as diferenças de versões para somente após permitir o envio para o repositório em núvem.
+  git pull origin main
