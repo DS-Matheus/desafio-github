@@ -41,6 +41,7 @@
   git clone endereço
 * **git status:** exibe a situação da branch atual, listando os arquivos modificados, deletados e não rastreados (untracked).
 * **git log:** exibe o histórico de commits do repositório atual.
+  git log --decorate --oneline --graph --all
 * **git add:** autentica o arquivo, deixa ele como "staged" e pronto para ser "commitado"
   git add *
 * **git commit:** commita as mudanças, registrando-as e deixando prontas para serem enviadas ao repositório em nuvem.
